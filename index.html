@@ -72,17 +72,24 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-12 ">
-                                <form class="d-flex flex-column form-group">
-                                    <input id="wp" class="bg-dark text-light form-control text-center" placeholder="WEB PROGRAMMING"
-                                        type="text">
-                                    <input id="mts" class="bg-dark text-light mt-1 form-control text-center" placeholder="MATHS"
-                                        type="text">
-                                    <input id="comp" class="bg-dark text-light mt-1 form-control text-center" placeholder="COMPUTER"
-                                        type="text">
-                                    <input id="phy" class="bg-dark text-light mt-1 form-control text-center" placeholder="PHYSICS"
-                                        type="text">
-                                    <input id="percent" class="bg-dark percent font-weight-bold mt-1 form-control text-center text-info"
-                                        value="SHOW PERCENTAGE" type="button" onclick="calcy()">
+                                <form class="d-flex flex-column form-group" method="get">
+                                    <input id="wp" class="bg-dark text-light form-control text-center input-text" placeholder="WEB PROGRAMMING" maxlength="3"
+                                        type="text" onkeypress="return onlyNumberKey(event)">
+                                    <input id="mts" class="bg-dark text-light mt-1 form-control text-center input-text" placeholder="MATHS" maxlength="3"
+                                        type="text" onkeypress="return onlyNumberKey(event)">
+                                    <input id="comp" class="bg-dark text-light mt-1 form-control text-center input-text" placeholder="COMPUTER" maxlength="3"
+                                        type="text" onkeypress="return onlyNumberKey(event)">
+                                    <input id="phy" class="bg-dark text-light mt-1 form-control text-center input-text" placeholder="PHYSICS" maxlength="3"
+                                        type="text" onkeypress="return onlyNumberKey(event)">
+                                    <input id="percent" class="bg-dark percent font-weight-bold mt-1 form-control text-center text-info form-button"
+                                        value="SHOW PERCENTAGE" type="button" onclick="calcy()" >
+
+                                        <!-- <input class="bg-dark text-light form-control text-center input-text"  placeholder="WEB PROGRAMMING" type="text" id="txt" onkeyup="manage(this)" onkeypress="return onlyNumberKey(event)"/>
+                                        <input class="bg-dark text-light form-control text-center input-text" placeholder="MATHS" type="text" id="txt1" onkeyup="manage(this)" onkeypress="return onlyNumberKey(event)"/>
+                                        <input class="bg-dark text-light form-control text-center input-text" placeholder="COMPUTER" type="text" id="txt2" onkeyup="manage(this)" onkeypress="return onlyNumberKey(event)"/>
+                                        <input class="bg-dark text-light form-control text-center input-text" placeholder="PHYSICS" type="text" id="txt3" onkeyup="manage(this)" onkeypress="return onlyNumberKey(event)"/>
+                                        
+                                        <input class="bg-dark percent font-weight-bold mt-1 form-control text-center text-info form-button" type="button" id="btSubmit" disabled onclick="calcy()" /> -->
                                 </form>
                             </div>
                             <div class="showdata">
